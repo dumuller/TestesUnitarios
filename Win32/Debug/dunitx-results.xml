@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test-results name="C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Win32\Debug\Teste.exe" total="8" errors="0" failures="0" ignored="0" inconclusive="0" not-run="0" skipped="0" invalid="0" date="2017-10-02" time="22.466">
+  <culture-info current-culture="en" current-uiculture="en" />
+  <test-suite type="Assembly" name="Teste.exe" executed="true" result="Success" success="True" time="22.466" asserts="0">
+    <results>
+        <test-suite type="Namespace" name="uCalcTest" executed="true" result="Success" success="True" time="0.000" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="TCalcTest" executed="True" result="Success" success="True" time="0.000" >
+                <categories>
+                  <category name="Calculos" />
+                </categories>
+                <results>
+                  <test-case name="Somar.TesteSoma" executed="True" result="Success" success="True" time="0.000" asserts="0" >
+                    <categories>
+                      <category name="Simples" />
+                    </categories>
+                  </test-case>
+                  <test-case name="Subtrair.TesteSubtração" executed="True" result="Success" success="True" time="0.000" asserts="0" >
+                    <categories>
+                      <category name="Simples" />
+                    </categories>
+                  </test-case>
+                  <test-case name="Dividir.TesteDivizão" executed="True" result="Success" success="True" time="0.000" asserts="0" >
+                    <categories>
+                      <category name="Simples" />
+                    </categories>
+                  </test-case>
+                  <test-case name="Multiplicar.TesteMultiplicação" executed="True" result="Success" success="True" time="0.000" asserts="0" >
+                    <categories>
+                      <category name="Simples" />
+                    </categories>
+                  </test-case>
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+        <test-suite type="Namespace" name="uVendaTest" executed="true" result="Success" success="True" time="22.466" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="TVendaTest" executed="True" result="Success" success="True" time="22.466" >
+                <categories>
+                  <category name="Venda" />
+                </categories>
+                <results>
+                  <test-case name="FinalizarVendaSemItensLancados" executed="True" result="Success" success="True" time="1.681" asserts="0" >
+                    <categories>
+                      <category name="Rápido" />
+                    </categories>
+                  </test-case>
+                  <test-case name="VendeItem" executed="True" result="Success" success="True" time="0.000" asserts="0" >
+                    <categories>
+                      <category name="Venda" />
+                    </categories>
+                  </test-case>
+                  <test-case name="TotalItem" executed="True" result="Success" success="True" time="20.785" asserts="0" >
+                    <categories>
+                      <category name="Venda" />
+                    </categories>
+                  </test-case>
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+        <test-suite type="Namespace" name="uTributacaoTest" executed="true" result="Success" success="True" time="0.000" asserts="0" >
+          <results>
+              <test-suite type="Fixture" name="TTributacaoTest" executed="True" result="Success" success="True" time="0.000" >
+                <results>
+                  <test-case name="CalculoValorIcms.Cálculo ICMS" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+          </results>
+        </test-suite>
+    </results>
+  </test-suite>
+</test-results>
