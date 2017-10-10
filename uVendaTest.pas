@@ -3,14 +3,15 @@ unit uVendaTest;
 interface
 
 uses
-  DUnitX.TestFramework, uVendaClass;
+  DUnitX.TestFramework, uVenda;
 
 type
   [TestFixture]
   [Category('Venda')]
   TVendaTest = class(TObject)
   private
-    eVenda: TVendaClass;
+    fVenda: TVenda;
+    fComissao: TComissao;
   public
     [Setup]
     procedure Setup;
@@ -21,38 +22,50 @@ type
     procedure FinalizarVendaSemItensLancados;
     [Test]
     procedure VendeItem();
+    [Test]
+    procedure CalculaComissao;
   end;
 
 implementation
 
 { TVendaTest }
 
+procedure TVendaTest.CalculaComissao;
+var
+vResult: Double;
+begin
+  vResult := fComissao.CalculaComissao(100, 3);
+  Assert.IsTrue(vResult = 3);
+end;
+
 procedure TVendaTest.FinalizarVendaSemItensLancados;
 begin
   Assert.WillRaiseWithMessage(
     procedure
     begin
-      eVenda.Iniciar;
-      eVenda.Finalizar;
+      fVenda.Iniciar;
+      fVenda.Finalizar;
     end, nil, 'É necessário ao menos um item lançado para finalizar venda');
 end;
 
 procedure TVendaTest.Setup;
 begin
-  eVenda := TVendaClass.Create;
+  fVenda := TVenda.Create;
+  fComissao := TComissao.Create;
 end;
 
 procedure TVendaTest.TearDown;
 begin
-  eVenda.Free;
+  fVenda.Free;
+  fComissao.Free;
 end;
 
 procedure TVendaTest.VendeItem;
 var
   vTotal: Double;
 begin
-  eVenda.VendeItem(1, 10, 10);
-  vTotal := eVenda.TotalItem();
+  fVenda.VendeItem(1, 10, 10);
+  vTotal := fVenda.TotalItem();
   Assert.IsTrue(vTotal = 100);
 end;
 

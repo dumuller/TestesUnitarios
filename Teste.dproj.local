@@ -3,21 +3,24 @@
 	<Transactions>
     <Transaction>2017/09/03 21:30:53.000.201,=C:\Users\Eduardo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2017/09/25 21:36:04.000.043,=C:\Users\Eduardo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/09/25 21:37:53.000.720,C:\Users\Eduardo\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uExemplo.pas</Transaction>
-    <Transaction>2017/09/25 21:38:01.000.620,C:\Users\Eduardo\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Teste.dproj</Transaction>
+    <Transaction>2017/09/25 21:37:53.000.720,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uExemplo.pas=C:\Users\Eduardo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/09/25 21:38:01.000.620,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Teste.dproj=C:\Users\Eduardo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2017/09/26 19:06:44.000.387,=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 19:06:55.000.504,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVenda.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
+    <Transaction>2017/09/26 19:06:55.000.504,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVenda.pas</Transaction>
     <Transaction>2017/09/26 19:07:28.000.736,=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 19:07:43.000.684,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVendaClass.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 19:33:30.000.378,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVendaTest.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVenda.pas</Transaction>
+    <Transaction>2017/09/26 19:07:43.000.684,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVendaClass.pas</Transaction>
+    <Transaction>2017/09/26 19:33:30.000.378,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVenda.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVendaTest.pas</Transaction>
     <Transaction>2017/09/26 19:33:57.000.801,=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 19:34:08.000.720,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uCalcTest.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
+    <Transaction>2017/09/26 19:34:08.000.720,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uCalcTest.pas</Transaction>
     <Transaction>2017/09/26 19:34:20.000.324,=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 19:34:31.000.219,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uCalcClass.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
+    <Transaction>2017/09/26 19:34:31.000.219,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uCalcClass.pas</Transaction>
     <Transaction>2017/09/26 20:23:45.000.307,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uExemplo.pas=</Transaction>
     <Transaction>2017/09/26 20:24:35.000.927,=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 20:24:53.000.592,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uTributacaoClass.pas</Transaction>
+    <Transaction>2017/09/26 20:24:53.000.592,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uTributacaoClass.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
     <Transaction>2017/09/26 20:25:30.000.786,=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
-    <Transaction>2017/09/26 20:25:43.000.204,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uTributacaoTest.pas</Transaction>
+    <Transaction>2017/09/26 20:25:43.000.204,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uTributacaoTest.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\Unit1.pas</Transaction>
+    <Transaction>2017/10/04 19:36:38.000.423,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uTributacao.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uTributacaoClass.pas</Transaction>
+    <Transaction>2017/10/04 19:39:54.000.778,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uCalc.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uCalcClass.pas</Transaction>
+    <Transaction>2017/10/04 19:41:40.000.806,C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVenda.pas=C:\Users\Eduardo\Documents\Faculdade\8º Período\ProjetoTeste\uVendaClass.pas</Transaction>
   </Transactions>
 </BorlandProject>

@@ -12,10 +12,10 @@ uses
   DUnitX.Loggers.Xml.NUnit,
   DUnitX.TestFramework,
   uVendaTest in 'uVendaTest.pas',
-  uVendaClass in 'uVendaClass.pas',
+  uVenda in 'uVenda.pas',
   uCalcTest in 'uCalcTest.pas',
-  uCalcClass in 'uCalcClass.pas',
-  uTributacaoClass in 'uTributacaoClass.pas',
+  uCalc in 'uCalc.pas',
+  uTributacao in 'uTributacao.pas',
   uTributacaoTest in 'uTributacaoTest.pas';
 
 var

@@ -3,14 +3,14 @@ unit uCalcTest;
 interface
 
 uses
-  DUnitX.TestFramework, uCalcClass;
+  DUnitX.TestFramework, uCalc;
 
 type
   [TestFixture]
   [Category('Calculos')]
   TCalcTest = class(TObject)
   strict private
-    eCalc: TCalcClass;
+    fCalc: TCalc;
   public
     [Setup]
     procedure Setup;
@@ -36,7 +36,7 @@ procedure TCalcTest.Dividir(pValor1, pValor2, pResult: Double);
 var
   vResult: Double;
 begin
-  vResult := eCalc.Dividir(pValor1, pValor2);
+  vResult := fCalc.Dividir(pValor1, pValor2);
   Assert.AreEqual(vResult, pResult);
 end;
 
@@ -44,20 +44,20 @@ procedure TCalcTest.Multiplicar(pValor1, pValor2, pResult: Double);
 var
   vResult: Double;
 begin
-  vResult := eCalc.Multiplicar(pValor1, pValor2);
+  vResult := fCalc.Multiplicar(pValor1, pValor2);
   Assert.AreEqual(vResult, pResult);
 end;
 
 procedure TCalcTest.Setup;
 begin
-  eCalc := TCalcClass.Create;
+  fCalc := TCalc.Create;
 end;
 
 procedure TCalcTest.Somar(pValor1, pValor2, pResult: Double);
 var
   vResult: Double;
 begin
-  vResult := eCalc.Somar(pValor1, pValor2);
+  vResult := fCalc.Somar(pValor1, pValor2);
   Assert.AreEqual(vResult, pResult);
 end;
 
@@ -65,13 +65,13 @@ procedure TCalcTest.Subtrair(pValor1, pValor2, pResult: Double);
 var
   vResult: Double;
 begin
-  vResult := eCalc.Subtrair(pValor1, pValor2);
+  vResult := fCalc.Subtrair(pValor1, pValor2);
   Assert.AreEqual(vResult, pResult);
 end;
 
 procedure TCalcTest.TearDown;
 begin
-  eCalc.Free;
+  fCalc.Free;
 end;
 
 initialization
