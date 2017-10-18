@@ -7,7 +7,6 @@ uses
 
 type
   [TestFixture]
-  [Category('Calculos')]
   TCalcTest = class(TObject)
   strict private
     fCalc: TCalc;
@@ -16,17 +15,17 @@ type
     procedure Setup;
     [TearDown]
     procedure TearDown;
+
     [TestCase('TesteSoma', '5,5,10')]
-    [Category('Simples')]
     procedure Somar(pValor1, pValor2, pResult: Double);
+
     [TestCase('TesteSubtração', '5,5,0')]
-    [Category('Simples')]
     procedure Subtrair(pValor1, pValor2, pResult: Double);
+
     [TestCase('TesteDivizão', '25,5,5')]
-    [Category('Simples')]
     procedure Dividir(pValor1, pValor2, pResult: Double);
+
     [TestCase('TesteMultiplicação', '5,50,250')]
-    [Category('Simples')]
     procedure Multiplicar(pValor1, pValor2, pResult: Double);
   end;
 
@@ -76,6 +75,5 @@ end;
 
 initialization
   TDUnitX.RegisterTestFixture(TCalcTest);
-
 end.
 

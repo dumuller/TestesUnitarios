@@ -7,7 +7,6 @@ uses
 
 type
   [TestFixture]
-  [Category('Venda')]
   TVendaTest = class(TObject)
   private
     fVenda: TVenda;
@@ -17,11 +16,13 @@ type
     procedure Setup;
     [TearDown]
     procedure TearDown;
+
     [Test]
-    [Category('Rápido')]
     procedure FinalizarVendaSemItensLancados;
+
     [Test]
     procedure VendeItem();
+
     [Test]
     procedure CalculaComissao;
   end;
@@ -65,7 +66,7 @@ var
   vTotal: Double;
 begin
   fVenda.VendeItem(1, 10, 10);
-  vTotal := fVenda.TotalItem();
+  vTotal := fVenda.TotalVenda();
   Assert.IsTrue(vTotal = 100);
 end;
 

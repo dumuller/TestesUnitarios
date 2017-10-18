@@ -3,8 +3,7 @@ unit uVenda;
 interface
 
 uses
-  System.Generics.Collections, System.SysUtils;
-
+  System.Generics.Collections, System.SysUtils, uCalc;
 type
   TItemVenda = class
   private
@@ -20,17 +19,26 @@ type
   TVenda = class
   private
     FItens: TObjectList<TItemVenda>;
+    FNomeCliente: string;
+    FCalc: TCalc;
   public
     constructor Create;
     destructor Destroy;
     procedure Iniciar;
     procedure Finalizar;
     procedure VendeItem(const pCodigo: Integer; pQuantidade, pValor: Double);
-    function TotalItem(): Double;
+    function TotalVenda(): Double;
+    property NomeCliente: string read FNomeCliente write FNomeCliente;
+    property Calc: TCalc read FCalc;
   end;
 
   TComissao = class
+  private
+    FCalc: TCalc;
   public
+    property Calc: TCalc read FCalc;
+    constructor Create;
+    destructor Destroy;
     function CalculaComissao(pValorVenda, pPercentualComissao: Double): Double;
   end;
 
@@ -41,11 +49,13 @@ implementation
 constructor TVenda.Create;
 begin
   FItens := TObjectList<TItemVenda>.Create;
+  FCalc := TCalc.Create;
 end;
 
 destructor TVenda.Destroy;
 begin
   FItens.Free;
+  FCalc.Free;
 end;
 
 procedure TVenda.Finalizar;
@@ -56,16 +66,16 @@ end;
 
 procedure TVenda.Iniciar;
 begin
-
+   FNomeCliente := 'Nome do Cliente';
 end;
 
-function TVenda.TotalItem(): Double;
+function TVenda.TotalVenda(): Double;
 var
-  I: Integer;
   vItemVenda: TItemVenda;
 begin
+  Result := 0;
   for vItemVenda in FItens do
-    Result := Result + (vItemVenda.Quantidade * vItemVenda.Valor);
+    Result := FCalc.Somar(Result, (FCalc.Multiplicar(vItemVenda.Quantidade, vItemVenda.Valor)));
 end;
 
 procedure TVenda.VendeItem(const pCodigo: Integer; pQuantidade, pValor: Double);
@@ -83,7 +93,17 @@ end;
 
 function TComissao.CalculaComissao(pValorVenda, pPercentualComissao: Double): Double;
 begin
-  Result := pValorVenda * (pPercentualComissao / 100);
+  Result := FCalc.Multiplicar(pValorVenda, (FCalc.Dividir(pPercentualComissao,100)));
+end;
+
+constructor TComissao.Create;
+begin
+  FCalc := TCalc.Create;
+end;
+
+destructor TComissao.Destroy;
+begin
+  FCalc.Free;
 end;
 
 end.
