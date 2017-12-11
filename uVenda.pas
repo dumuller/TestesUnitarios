@@ -23,7 +23,7 @@ type
     FCalc: TCalc;
   public
     constructor Create;
-    destructor Destroy;
+    destructor Destroy; override;
     procedure Iniciar;
     procedure Finalizar;
     procedure VendeItem(const pCodigo: Integer; pQuantidade, pValor: Double);
@@ -38,7 +38,7 @@ type
   public
     property Calc: TCalc read FCalc;
     constructor Create;
-    destructor Destroy;
+    destructor Destroy; override;
     function CalculaComissao(pValorVenda, pPercentualComissao: Double): Double;
   end;
 
@@ -61,7 +61,7 @@ end;
 procedure TVenda.Finalizar;
 begin
   if FItens.Count < 1 then
-    raise Exception.Create('É necessário ao menos um item lançado para finalizar venda');
+    raise Exception.Create('É necessário ao menos um item lançado para finalizar a venda');
 end;
 
 procedure TVenda.Iniciar;

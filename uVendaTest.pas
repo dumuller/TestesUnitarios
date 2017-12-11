@@ -33,7 +33,7 @@ implementation
 
 procedure TVendaTest.CalculaComissao;
 var
-vResult: Double;
+  vResult: Double;
 begin
   vResult := fComissao.CalculaComissao(100, 3);
   Assert.IsTrue(vResult = 3);
@@ -46,7 +46,16 @@ begin
     begin
       fVenda.Iniciar;
       fVenda.Finalizar;
-    end, nil, 'É necessário ao menos um item lançado para finalizar venda');
+    end, nil, 'É necessário ao menos um item lançado para finalizar a venda');
+end;
+
+procedure TVendaTest.VendeItem;
+var
+  vTotal: Double;
+begin
+  fVenda.VendeItem(1, 10, 10);
+  vTotal := fVenda.TotalVenda();
+  Assert.IsTrue(vTotal = 100);
 end;
 
 procedure TVendaTest.Setup;
@@ -61,17 +70,7 @@ begin
   fComissao.Free;
 end;
 
-procedure TVendaTest.VendeItem;
-var
-  vTotal: Double;
-begin
-  fVenda.VendeItem(1, 10, 10);
-  vTotal := fVenda.TotalVenda();
-  Assert.IsTrue(vTotal = 100);
-end;
-
 initialization
   TDUnitX.RegisterTestFixture(TVendaTest);
-
 end.
 

@@ -19,16 +19,18 @@ uses
   uTributacaoTest in 'uTributacaoTest.pas';
 
 var
-  runner : ITestRunner;
-  results : IRunResults;
-  logger : ITestLogger;
-  nunitLogger : ITestLogger;
+  runner: ITestRunner;
+  results: IRunResults;
+  logger: ITestLogger;
+  nunitLogger: ITestLogger;
+
 begin
 {$IFDEF TESTINSIGHT}
   TestInsight.DUnitX.RunRegisteredTests;
   exit;
 {$ENDIF}
   try
+    ReportMemoryLeaksOnShutdown := true;
     //Check command line options, will exit if invalid
     TDUnitX.CheckCommandLine;
     //Create the test runner
@@ -62,3 +64,5 @@ begin
       System.Writeln(E.ClassName, ': ', E.Message);
   end;
 end.
+
+

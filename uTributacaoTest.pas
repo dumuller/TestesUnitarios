@@ -16,15 +16,12 @@ type
     procedure Setup;
     [TearDown]
     procedure TearDown;
-
-    [TestCase('Cálculo ICMS', '100,17,17')]
+    [TestCase('Teste Cálculo ICMS', '100,17,17')]
     procedure CalculoValorIcms(pValorBase, pAliquota, pResult: Double);
-
-    [TestCase('Cálculo IPI', '10,100,20,0,10,13')]
+    [TestCase('Teste Cálculo IPI', '10,100,20,0,10,13')]
     procedure CalculoValorIpi(pAliquota, pValorProduto, pFrete, pSeguro, pAcessorias, pResult: Double);
-
-    [TestCase('Calculo ST','12,18,9600,39,0')]
-    procedure CalculoValorIcmsSt(pAliquotaInterna, pAliquotaInterEstadual, pValorBase, pMva, vDesconto: Double);
+    [TestCase('Teste Cálculo ST', '12,18,9600,39,0, 1350')]
+    procedure CalculoValorIcmsSt(pAliquotaInterna, pAliquotaInterEstadual, pValorBase, pMva, pDesconto, pResult: Double);
   end;
 
 implementation
@@ -37,15 +34,12 @@ begin
   Assert.AreEqual(pResult, vResult);
 end;
 
-procedure TTributacaoTest.CalculoValorIcmsSt(pAliquotaInterna, pAliquotaInterEstadual,
-pValorBase, pMva, vDesconto: Double);
+procedure TTributacaoTest.CalculoValorIcmsSt(pAliquotaInterna, pAliquotaInterEstadual, pValorBase, pMva, pDesconto, pResult: Double);
 var
-  vResult, vEsperado: Double;
+  vResult: Double;
 begin
- vEsperado := 1350;
-  vResult := fIcmsSt.CalculoValorSubstituicaoIcms(pAliquotaInterna, pAliquotaInterEstadual, pValorBase,
-  pMva, vDesconto, 400);
-  Assert.AreEqual(vEsperado, vResult);
+  vResult := fIcmsSt.CalculoValorSubstituicaoIcms(pAliquotaInterna, pAliquotaInterEstadual, pValorBase, pMva, pDesconto, 400);
+  Assert.AreEqual(pResult, vResult);
 end;
 
 procedure TTributacaoTest.CalculoValorIpi(pAliquota, pValorProduto, pFrete, pSeguro, pAcessorias, pResult: Double);
@@ -70,6 +64,5 @@ end;
 
 initialization
   TDUnitX.RegisterTestFixture(TTributacaoTest);
-
 end.
 

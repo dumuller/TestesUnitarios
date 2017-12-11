@@ -15,16 +15,12 @@ type
     procedure Setup;
     [TearDown]
     procedure TearDown;
-
     [TestCase('TesteSoma', '5,5,10')]
     procedure Somar(pValor1, pValor2, pResult: Double);
-
     [TestCase('TesteSubtração', '5,5,0')]
     procedure Subtrair(pValor1, pValor2, pResult: Double);
-
     [TestCase('TesteDivizão', '25,5,5')]
     procedure Dividir(pValor1, pValor2, pResult: Double);
-
     [TestCase('TesteMultiplicação', '5,50,250')]
     procedure Multiplicar(pValor1, pValor2, pResult: Double);
   end;
@@ -70,7 +66,7 @@ end;
 
 procedure TCalcTest.TearDown;
 begin
-  fCalc.Free;
+ fCalc.Free;
 end;
 
 initialization
